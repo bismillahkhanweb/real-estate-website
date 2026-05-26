@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXE ESTATES | Premium Real Estate</title>
+
+    <!-- Google Fonts: Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">LUXE<span>ESTATES</span></a>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#team">Agents</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="hero">
+        <div class="container hero-content">
+          <h1>
+            Find Your Dream<br /><span style="color: var(--accent-gold)"
+              >Luxury Home</span
+            >
+          </h1>
+          <p>Exclusive properties in Pakistan's most prestigious locations.</p>
+
+          <!-- SEARCH BAR -->
+          <form class="search-container" onsubmit="event.preventDefault()">
+            <div class="input-group">
+              <label>Location</label>
+              <input type="text" placeholder="e.g. DHA Lahore" />
+            </div>
+
+            <div class="input-group">
+              <label>Property Type</label>
+              <select>
+                <option value="">Select Type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="commercial">Commercial</option>
+                <option value="plot">Plot</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label>Price Range</label>
+              <select>
+                <option value="">Any Price</option>
+                <option value="1">PKR 10M - 50M</option>
+                <option value="2">PKR 50M - 100M</option>
+                <option value="3">PKR 100M+</option>
+              </select>
+            </div>
+
+            <button class="search-btn">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- STATS SECTION -->
+      <section id="stats">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <h3 data-target="150">0</h3>
+            <p>Properties Sold</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-target="85">0</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-target="12">0</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-target="5">0</h3>
+            <p>Cities Covered</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROPERTIES -->
+      <section id="properties" class="section-padding reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured Properties</h2>
+            <p>Handpicked selections for elite living</p>
+          </div>
+
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="house">House</button>
+            <button class="filter-btn" data-filter="apartment">
+              Apartment
+            </button>
+            <button class="filter-btn" data-filter="commercial">
+              Commercial
+            </button>
+            <button class="filter-btn" data-filter="plot">Plot</button>
+          </div>
+
+          <div class="property-grid" id="property-grid">
+            <!-- Properties Injected via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM SECTION -->
+      <section id="team" class="section-padding reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Meet Our Agents</h2>
+            <p>Expert guidance for your investments</p>
+          </div>
+          <div class="team-grid">
+            <div class="agent-card">
+              <div class="agent-img">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                  alt="Agent" />
+              </div>
+              <h4>Ahmed Khan</h4>
+              <p>Senior Consultant</p>
+              <a
+                href="#contact"
+                class="btn"
+                style="padding: 8px 20px; font-size: 0.8rem"
+                >Contact</a
+              >
+            </div>
+            <div class="agent-card">
+              <div class="agent-img">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                  alt="Agent" />
+              </div>
+              <h4>Sara Malik</h4>
+              <p>Property Specialist</p>
+              <a
+                href="#contact"
+                class="btn"
+                style="padding: 8px 20px; font-size: 0.8rem"
+                >Contact</a
+              >
+            </div>
+            <div class="agent-card">
+              <div class="agent-img">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                  alt="Agent" />
+              </div>
+              <h4>Bilal Ahmed</h4>
+              <p>Investment Advisor</p>
+              <a
+                href="#contact"
+                class="btn"
+                style="padding: 8px 20px; font-size: 0.8rem"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="section-padding reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Client Testimonials</h2>
+            <p>Trusted by thousands across Pakistan</p>
+          </div>
+          <div class="testimonial-slider" id="testimonial-slider">
+            <div class="testimonial-slide active">
+              <div class="quote-icon">“</div>
+              <p class="review-text">
+                Exceptional service! They found me a villa in DHA within my
+                budget and timeline. The team was professional throughout.
+              </p>
+              <p class="client-name">- Usman Ali, Lahore</p>
+            </div>
+            <div class="testimonial-slide">
+              <div class="quote-icon">“</div>
+              <p class="review-text">
+                Luxe Estates made buying my first commercial property incredibly
+                smooth. Highly recommended for investors.
+              </p>
+              <p class="client-name">- Fatima Sheikh, Karachi</p>
+            </div>
+            <div class="testimonial-slide">
+              <div class="quote-icon">“</div>
+              <p class="review-text">
+                Transparent dealing and great market knowledge. I sold my plot
+                at a very profitable rate thanks to them.
+              </p>
+              <p class="client-name">- Hassan Raza, Islamabad</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section-padding reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Start your journey with us today</p>
+          </div>
+          <div class="contact-container">
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h4>Head Office</h4>
+                <p>123 Main Boulevard, Gulberg III, Lahore, Pakistan</p>
+              </div>
+              <div class="contact-info-item">
+                <h4>WhatsApp</h4>
+                <p>+92 300 1234567</p>
+              </div>
+              <div class="contact-info-item">
+                <h4>Email</h4>
+                <p>info@luxeestates.pk</p>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form action="https://formspree.io/f/mdajzlbk" method="POST">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required />
+                <input type="tel" name="phone" placeholder="Phone Number" />
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Your Inquiry"
+                  required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 <span>LUXE ESTATES</span>. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">&#8679;</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
